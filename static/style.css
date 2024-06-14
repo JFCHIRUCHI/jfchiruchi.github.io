@@ -1,0 +1,77 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.jumbotron {
+    background-image: url("{{ url_for('static', filename='background.jpg') }}");
+    background-size: cover;
+    background-position: center;
+    padding: 5rem 1rem;
+    border-radius: 0;
+    text-align: center;
+}
+
+.company-logo {
+    width: 300px; /* Ajustar el ancho del logo */
+    height: auto; /* Altura automática para mantener la proporción */
+    margin-bottom: 20px;
+    filter: brightness(0.8); /* Reducir brillo para que resalte más */
+    border-radius: 10px; /* Puntas redondeadas */
+}
+
+.jumbotron h1 {
+    font-size: 4rem;
+    margin-bottom: 1.5rem;
+    color: #ffffff; /* Blanco */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Sombra de texto */
+}
+
+.jumbotron p {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    color: #ffffff; /* Blanco */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Sombra de texto */
+}
+
+.form-group {
+    margin-bottom: 2rem;
+}
+
+.form-control {
+    width: 100%;
+    padding: 1rem;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 0.3rem;
+    background-color: rgba(211, 211, 211, 0.8);
+}
+
+.btn-primary, .btn-secondary, .btn-success, .btn-warning, .btn-danger {
+    width: 100%;
+    margin-top: 5px;
+    padding: 1rem;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 0.3rem;
+}
+
+.btn-primary:hover, .btn-secondary:hover, .btn-success:hover, .btn-warning:hover, .btn-danger:hover {
+    opacity: 0.9;
+}
+
+.list-group-item {
+    font-size: 1.2rem;
+    background-color: rgba(255, 255, 255, 0.8);
+    color: #28a745; /* Verde */
+    border: 1px solid #28a745; /* Borde verde */
+    border-radius: 0.3rem;
+    margin-top: 5px;
+    padding: 10px;
+    transition: all 0.3s ease; /* Transición suave */
+}
+
+.list-group-item:hover {
+    background-color: rgba(255, 255, 255, 0.9); /* Blanco */
+}
